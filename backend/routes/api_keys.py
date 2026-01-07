@@ -19,12 +19,10 @@ from auth.organization import get_current_organization
 from models.user import User
 from models.organization import Organization
 from services import api_key_service
-from middleware.feature_flags import require_feature
 
 router = APIRouter(
     prefix="/api/developer",
     tags=["developer"],
-    dependencies=[Depends(require_feature("API_KEYS_ENABLED"))]
 )
 
 

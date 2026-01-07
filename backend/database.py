@@ -12,7 +12,7 @@ logger = get_logger(__name__)
 # Database URL from environment or default to local PostgreSQL
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql://postgres:postgres@localhost:5432/starter_db"
+    "postgresql://postgres:postgres@localhost:5434/starter_db"
 )
 
 # Handle Heroku-style postgres:// URLs

@@ -7,7 +7,7 @@ import os
 from fastapi import APIRouter, Depends, HTTPException, status, Request, Response
 from sqlalchemy.orm import Session
 from pydantic import BaseModel, EmailStr
-from typing import Optional
+from typing import Optional, Tuple
 import re
 
 from database import get_db
@@ -42,7 +42,7 @@ def clear_auth_cookie(response: Response):
     response.delete_cookie(key=COOKIE_NAME, path="/")
 
 
-def validate_password(password: str) -> tuple[bool, str]:
+def validate_password(password: str) -> Tuple[bool, str]:
     """Validate password meets security requirements."""
     if len(password) < 12:
         return False, "Password must be at least 12 characters"

@@ -18,14 +18,15 @@ from alembic import context
 # Import Base and all models for autogenerate support
 from database import Base, DATABASE_URL
 from models import (
-    Campaign,
-    OrgMember,
-    Interview,
-    Chunk,
-    ExecutiveChat,
     User,
     Organization,
     OrganizationMembership,
+    OrganizationInvite,
+    PasswordResetToken,
+    APIKey,
+    APIUsage,
+    Webhook,
+    WebhookDelivery,
 )
 
 # this is the Alembic Config object, which provides
