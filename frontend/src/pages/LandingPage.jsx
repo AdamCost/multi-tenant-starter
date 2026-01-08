@@ -44,13 +44,13 @@ function LandingPage() {
             </div>
             <div className="flex items-center space-x-4">
               <Link
-                to="/login"
+                to="/"
                 className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium"
               >
                 Sign In
               </Link>
               <Link
-                to="/login"
+                to="/"
                 className="bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors"
               >
                 Get Started
@@ -74,7 +74,7 @@ function LandingPage() {
             </p>
             <div className="mt-10 flex justify-center gap-4">
               <Link
-                to="/login"
+                to="/"
                 className="bg-primary-600 text-white px-8 py-3 rounded-lg text-base font-medium hover:bg-primary-700 transition-colors shadow-lg shadow-primary-500/25"
               >
                 Get Started Free

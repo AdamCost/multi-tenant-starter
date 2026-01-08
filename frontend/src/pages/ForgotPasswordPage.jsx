@@ -65,7 +65,7 @@ function ForgotPasswordPage() {
                 The link will expire in 1 hour. Be sure to check your spam folder.
               </p>
               <Link
-                to="/login"
+                to="/"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-xl font-medium hover:from-primary-600 hover:to-purple-700 transition-all"
               >
                 <ArrowLeftIcon className="w-5 h-5 mr-2" />
@@ -180,7 +180,7 @@ function ForgotPasswordPage() {
             {/* Back to Login Link */}
             <div className="mt-6 text-center">
               <Link
-                to="/login"
+                to="/"
                 className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900"
               >
                 <ArrowLeftIcon className="w-4 h-4 mr-2" />

@@ -13,7 +13,6 @@ const PageLoader = () => (
 // Lazy load pages for code splitting
 // Public pages
 const LandingPage = lazy(() => import('./pages/LandingPage'))
-const LoginPage = lazy(() => import('./pages/LoginPage'))
 const ForgotPasswordPage = lazy(() => import('./pages/ForgotPasswordPage'))
 const ResetPasswordPage = lazy(() => import('./pages/ResetPasswordPage'))
 const AcceptInvitePage = lazy(() => import('./pages/AcceptInvitePage'))
@@ -53,7 +52,7 @@ function ProtectedRoute({ children }) {
   }
 
   if (!user) {
-    return <Navigate to="/login" replace />
+    return <Navigate to="/" replace />
   }
 
   return children
@@ -65,7 +64,6 @@ function App() {
       <Routes>
         {/* Public routes */}
         <Route path="/" element={<LazyPage><LandingPage /></LazyPage>} />
-        <Route path="/login" element={<LazyPage><LoginPage /></LazyPage>} />
         <Route path="/forgot-password" element={<LazyPage><ForgotPasswordPage /></LazyPage>} />
         <Route path="/reset-password" element={<LazyPage><ResetPasswordPage /></LazyPage>} />
         <Route path="/invite/:token" element={<LazyPage><AcceptInvitePage /></LazyPage>} />

@@ -121,7 +121,7 @@ function ResetPasswordPage() {
                 Your password has been successfully reset. You can now sign in with your new password.
               </p>
               <Link
-                to="/login"
+                to="/"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-xl font-medium hover:from-primary-600 hover:to-purple-700 transition-all"
               >
                 Sign In

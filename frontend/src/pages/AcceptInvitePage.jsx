@@ -166,7 +166,7 @@ function AcceptInvitePage() {
               </h1>
               <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6">{error}</p>
               <Link
-                to="/login"
+                to="/"
                 className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 min-h-[44px] bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors"
               >
                 Go to Login
@@ -251,7 +251,7 @@ function AcceptInvitePage() {
                 This invite was sent to {inviteInfo.email}. You're currently logged in as {user.email}. Please log out and try again.
               </p>
               <Link
-                to="/login"
+                to="/"
                 className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 min-h-[44px] bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors"
               >
                 Switch Account
@@ -281,7 +281,7 @@ function AcceptInvitePage() {
                 Already have an account?
               </span>
               <Link
-                to={`/login?redirect=/invite/${token}`}
+                to={`/?redirect=/invite/${token}`}
                 className="inline-flex items-center justify-center px-3 sm:px-4 py-2 min-h-[44px] bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors"
               >
                 Sign In
